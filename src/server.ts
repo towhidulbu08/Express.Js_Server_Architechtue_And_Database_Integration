@@ -4,17 +4,18 @@ import express, {
   type Response,
 } from "express";
 import { Pool } from "pg";
+import config from "./config";
 const app: Application = express();
-const port = 3000;
 
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
 const pool = new Pool({
-  connectionString:
-    "postgresql://neondb_owner:npg_ueX6nZjw5GbW@ep-orange-tree-aqjbei2j.c-8.us-east-1.aws.neon.tech/neondb?sslmode=require",
+  connectionString: config.c_str,
 });
+
+const port = config.port;
 
 const initDB = async () => {
   try {
@@ -34,6 +35,7 @@ const initDB = async () => {
       )
       `,
     );
+
     console.log("Database connected successfully");
   } catch (error) {
     console.log(error);
