@@ -22,13 +22,14 @@ const createUser = async (req: Request, res: Response) => {
 
 const getAllUsers = async (req: Request, res: Response) => {
   // res.send("Hello World!");
+
   try {
     const result = await userService.getAllUserFromDB();
 
     res.status(200).json({
       success: true,
       message: "Users Retrived Successfully",
-      data: result.rows,
+      data: result,
     });
   } catch (error: any) {
     res.status(500).json({
