@@ -25,7 +25,6 @@ const getAllUserFromDB = async () => {
     `);
 
   const arrwithoutPass = result.rows.map(({ password, ...rest }) => rest);
-  console.log("arriwithoutPass", arrwithoutPass);
 
   return arrwithoutPass;
 };
