@@ -113,6 +113,7 @@ const deleteUser = async (req: Request, res: Response) => {
         success: false,
         message: "User Not found",
       });
+      return;
     }
 
     res.status(200).json({
