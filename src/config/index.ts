@@ -10,6 +10,7 @@ const config = {
   port: process.env.PORT,
   secret: process.env.JWT_SECRET,
   ref_secret: process.env.REF_SECRET,
+  expire_Time: process.env.EXPIRE,
 };
 
 export default config;

@@ -168,3 +168,23 @@ Method->GET Time->1781099428337 Url /api/users
 Method->GET Time->1781099428644 Url /favicon.ico
 
 Method->POST Time->1781140846257 Url /api/auth/login
+
+Method->POST Time->1781222956561 Url /api/auth/login
+
+Method->POST Time->1781223036323 Url /api/auth/login
+
+Method->POST Time->1781223149944 Url /api/auth/refresh-token
+
+Method->POST Time->1781223381513 Url /api/auth/refresh-token
+
+Method->POST Time->1781224405041 Url /api/auth/refresh-token
+
+Method->POST Time->1781224465445 Url /api/auth/refresh-token
+
+Method->POST Time->1781224946384 Url /api/auth/refresh-token
+
+Method->POST Time->1781224949497 Url /api/auth/refresh-token
+
+Method->POST Time->1781225105406 Url /api/auth/refresh-token
+
+Method->POST Time->1781225111710 Url /api/auth/login
