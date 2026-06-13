@@ -212,3 +212,7 @@ Method->GET Time->1781287447693 Url /api/users/
 Method->GET Time->1781287455626 Url /api/users/
 
 Method->GET Time->1781287651697 Url /api/users/
+
+Method->POST Time->1781312276182 Url /api/users
+
+Method->POST Time->1781312301190 Url /api/users
